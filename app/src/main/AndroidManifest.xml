@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OverRol">
-        <activity android:name=".Resgistro"></activity>
+        <activity android:name=".dados"></activity>
+        <activity android:name=".fichaPersonaje" />
+        <activity android:name=".inicio" />
+        <activity android:name=".Resgistro" />
         <activity android:name=".Login" />
         <activity android:name=".MainActivity">
             <intent-filter>
