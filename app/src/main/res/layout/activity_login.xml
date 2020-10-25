@@ -7,22 +7,6 @@
     android:background="#373737"
     tools:context=".Login">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="228dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="288dp"
-        android:fontFamily="@font/gruppo"
-        android:text="Usuario"
-        android:textAllCaps="true"
-        android:textColor="#FFB952"
-        android:textSize="36sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
@@ -33,6 +17,22 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/overline_4" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="228dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="288dp"
+        android:fontFamily="@font/gruppo"
+        android:text="@string/usuario"
+        android:textAllCaps="true"
+        android:textColor="#FFB952"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -56,7 +56,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/gruppo"
-        android:text="Contraseña"
+        android:text="@string/contrasena"
         android:textAllCaps="true"
         android:textColor="#FFB952"
         android:textSize="36sp"
@@ -84,12 +84,14 @@
         android:layout_width="265dp"
         android:layout_height="45dp"
         android:layout_marginTop="28dp"
+        android:onClick="acceder"
         android:text="Acceder"
         android:textColor="#000000"
         app:backgroundTint="#FFB952"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
 
     <Button
         android:id="@+id/button2"
