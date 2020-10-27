@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">OverRol</string>
-    <string name="usuario">User</string>
-    <string name="contrasena">Password</string>
-    <string name="acceder">Log in</string>
-    <string name="bienvenida">¡Welcome!</string>
-    <string name="registrarse">Sign in</string>
-</resources>

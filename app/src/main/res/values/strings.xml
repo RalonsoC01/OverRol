@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">OverRol</string>
-    <string name="usuario">Usuario</string>
-    <string name="contrasena">Contraseña</string>
-    <string name="acceder">Acceder</string>
-    <string name="bienvenida">¡Te da la bienvenida!</string>
-    <string name="registrarse">Registrarse</string>
+    <string name="app_name" translatable="false">OverRol</string>
+    <string name="usuario">User</string>
+    <string name="contrasena">Password</string>
+    <string name="acceder">Log in</string>
+    <string name="bienvenida">¡Welcome!</string>
+    <string name="registrarse">Sign in</string>
 </resources>
