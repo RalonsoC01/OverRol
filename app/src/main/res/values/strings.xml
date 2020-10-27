@@ -5,4 +5,8 @@
     <string name="acceder">Log in</string>
     <string name="bienvenida">¡Welcome!</string>
     <string name="registrarse">Sign in</string>
+    <string name="crearficha">Create character sheet</string>
+    <string name="Mis_personajes">My characters</string>
+    <string name="Recordar_contrasena">Remember a password</string>
+    <string name="Dados">Dices</string>
 </resources>

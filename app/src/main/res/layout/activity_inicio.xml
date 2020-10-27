@@ -7,4 +7,62 @@
     android:background="#373737"
     tools:context=".inicio">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="321dp"
+        android:layout_height="251dp"
+        android:layout_marginBottom="564dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/overline_4" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="363dp"
+        android:layout_height="73dp"
+        android:fontFamily="@font/gruppo"
+        android:text="@string/crearficha"
+        android:textColor="#000000"
+        android:textStyle="normal|bold"
+        app:backgroundTint="#FFB952"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="363dp"
+        android:layout_height="73dp"
+        android:fontFamily="@font/gruppo"
+        android:text="@string/Mis_personajes"
+        android:textColor="#000000"
+        android:textStyle="normal|bold"
+        app:backgroundTint="#FFB952"
+        app:icon="@android:drawable/ic_input_get"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        android:text="@string/Dados"
+        app:icon="@android:drawable/alert_light_frame"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443" />
 </androidx.constraintlayout.widget.ConstraintLayout>
