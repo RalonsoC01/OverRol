@@ -11,7 +11,7 @@
         android:id="@+id/imageView3"
         android:layout_width="281dp"
         android:layout_height="130dp"
-        android:layout_marginBottom="628dp"
+        android:layout_marginBottom="528dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +53,6 @@
         app:layout_constraintVertical_bias="0.784" />
 
     <Button
-        android:id="@+id/button5"
         android:layout_width="363dp"
         android:layout_height="73dp"
         android:fontFamily="@font/gruppo"
@@ -62,7 +61,6 @@
         android:textSize="14sp"
         android:textStyle="normal|bold"
         app:backgroundTint="#FFB952"
-        app:icon="@drawable/dados"
         app:iconPadding="0.1dp"
         app:iconTint="#000000"
         app:iconTintMode="src_in"
