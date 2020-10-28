@@ -9,4 +9,7 @@
     <string name="Mis_personajes">Mis personajes</string>
     <string name="Recordar_contrasena">Recordar contraseña</string>
     <string name="Dados">Dados</string>
+    <string name="NoAceptoRecibirPromociones">No acepto recibir promociones</string>
+    <string name="AceptoRecibirPromociones">Acepto recibir promociones</string>
+    <string name="nombre">Nombre de Usuario</string>
 </resources>
