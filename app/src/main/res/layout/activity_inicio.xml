@@ -9,9 +9,9 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="321dp"
-        android:layout_height="251dp"
-        android:layout_marginBottom="564dp"
+        android:layout_width="281dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="628dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,15 +54,21 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="118dp"
-        android:layout_height="118dp"
+        android:layout_width="363dp"
+        android:layout_height="73dp"
+        android:fontFamily="@font/gruppo"
         android:text="@string/Dados"
-        app:icon="@android:drawable/alert_light_frame"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        app:backgroundTint="#FFB952"
+        app:icon="@drawable/dados"
+        app:iconPadding="0.1dp"
         app:iconTint="#000000"
+        app:iconTintMode="src_in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.443" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
