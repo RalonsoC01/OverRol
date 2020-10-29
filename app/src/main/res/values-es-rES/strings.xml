@@ -12,4 +12,8 @@
     <string name="NoAceptoRecibirPromociones">No acepto recibir promociones</string>
     <string name="AceptoRecibirPromociones">Acepto recibir promociones</string>
     <string name="nombre">Nombre de Usuario</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="otro">Otro...</string>
+    <string name="atras">Volver</string>
 </resources>

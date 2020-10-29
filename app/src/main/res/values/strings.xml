@@ -12,4 +12,8 @@
     <string name="NoAceptoRecibirPromociones">I do not accept to receive marketing communications</string>
     <string name="AceptoRecibirPromociones">I agree to receive marketing communications</string>
     <string name="nombre">" Username"</string>
+    <string name="hombre">Male</string>
+    <string name="mujer">Female</string>
+    <string name="otro">Other...</string>
+    <string name="atras">Return</string>
 </resources>
