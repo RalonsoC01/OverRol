@@ -56,6 +56,7 @@
         android:layout_width="363dp"
         android:layout_height="73dp"
         android:fontFamily="@font/gruppo"
+        android:onClick="Daditos"
         android:text="@string/Dados"
         android:textColor="#000000"
         android:textSize="14sp"
