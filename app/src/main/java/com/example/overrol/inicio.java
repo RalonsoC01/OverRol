@@ -20,6 +20,11 @@ public class inicio extends AppCompatActivity {
         Intent i= new Intent(this,dados.class);
         startActivity(i);
     }
+    public void Inicio(View view)
+    {
+        Intent i= new Intent(this,inicio.class);
+        startActivity(i);
+    }
 
     //Menu actionBar
     public boolean onCreateOptionsMenu(Menu menu){

@@ -27,6 +27,12 @@ public class dados extends AppCompatActivity {
         tv_dadosd = findViewById(R.id.textDados);
     }
 
+    public void Inicio(View view)
+    {
+        Intent i= new Intent(this,inicio.class);
+        startActivity(i);
+    }
+
     public void D4(View view)
     {
         this.d4=(int) (Math.random()*4+1);

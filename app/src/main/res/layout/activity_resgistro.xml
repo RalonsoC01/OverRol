@@ -38,13 +38,16 @@
         app:layout_constraintVertical_bias="0.975">
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btnTerminarRegistro"
             android:layout_width="307dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#FFB952"
-            android:text="Button"
+            android:fontFamily="@font/gruppo"
+            android:text="@string/TerminarRegistro"
             android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
             app:backgroundTint="#FFB952" />
     </LinearLayout>
 
@@ -169,7 +172,8 @@
                 <Spinner
                     android:id="@+id/spinnerGenero"
                     android:layout_width="match_parent"
-                    android:layout_height="44dp" />
+                    android:layout_height="44dp"
+                    android:autofillHints="@string/Genero"/>
             </LinearLayout>
 
             <LinearLayout
@@ -196,14 +200,15 @@
                 android:orientation="horizontal" >
 
                 <EditText
-                    android:id="@+id/editTextTextPassword"
+                    android:id="@+id/txtContrasena"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPassword"
                     android:textColor="#FFB952"
-                    android:textColorHint="#FFB952" />
+                    android:textColorHint="#FFB952"
+                    android:hint="@string/contrasena"/>
             </LinearLayout>
 
             <LinearLayout
@@ -213,14 +218,15 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editTextTextPassword3"
+                    android:id="@+id/txtContrasena2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPassword"
                     android:textColor="#FFB952"
-                    android:textColorHint="#FFB952" />
+                    android:textColorHint="#FFB952"
+                    android:hint="@string/RepetirContrasena"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -236,7 +242,7 @@
         app:layout_constraintVertical_bias="0.906">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioButtonSi"
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:fontFamily="@font/gruppo"
@@ -246,7 +252,7 @@
             android:textStyle="bold|italic" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioButtonNo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/gruppo"

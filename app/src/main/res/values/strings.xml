@@ -16,4 +16,7 @@
     <string name="mujer">Female</string>
     <string name="otro">Other...</string>
     <string name="atras">Return</string>
+    <string name="RepetirContrasena">Repeat password</string>
+    <string name="Genero">Gender</string>
+    <string name="TerminarRegistro">Finish registration</string>
 </resources>
