@@ -19,4 +19,7 @@
     <string name="RepetirContrasena">Repetir contraseña</string>
     <string name="Genero">Género</string>
     <string name="TerminarRegistro">Terminar registro</string>
+    <string name="email">Correo electrónico</string>
+    <string name="autenticar">Autenticar</string>
+    <string name="RegresarALLogin">Volver</string>
 </resources>

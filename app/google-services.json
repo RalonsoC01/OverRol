@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "509473942588",
+    "firebase_url": "https://overrol.firebaseio.com",
+    "project_id": "overrol",
+    "storage_bucket": "overrol.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509473942588:android:5a5d7f91c94c96ff2ae739",
+        "android_client_info": {
+          "package_name": "com.example.overrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509473942588-9ijc3nt3ddqq81etl8ssotej134feoo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1z0ohFFFvKhwLOELodkoZxG8px-nIFk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509473942588-9ijc3nt3ddqq81etl8ssotej134feoo5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

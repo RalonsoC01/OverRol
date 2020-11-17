@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".EmailLogin">
+
+    <TextView
+        android:id="@+id/tvUsuarioEmailLogin"
+        android:layout_width="296dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/gruppo"
+        android:text="@string/email"
+        android:textAllCaps="true"
+        android:textColor="#FFB952"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="437dp"
+        android:layout_height="187dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/overline_4" />
+
+    <TextView
+        android:id="@+id/tvContrasenaEmailLogin"
+        android:layout_width="262dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/gruppo"
+        android:text="@string/contrasena"
+        android:textAllCaps="true"
+        android:textColor="#FFB952"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <EditText
+        android:id="@+id/txtEmailEmailLogin"
+        android:layout_width="262dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:fontFamily="@font/gruppo"
+        android:hint="example@example.com"
+        android:inputType="textEmailAddress"
+        android:textAllCaps="true"
+        android:textColor="#FFB952"
+        android:textColorHint="#FFB952"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <EditText
+        android:id="@+id/txtContrasenaEmailLogin"
+        android:layout_width="262dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textAllCaps="true"
+        android:textColor="#FFB952"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.629" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/gruppo"
+        android:text="@string/autenticar"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFB952"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <Button
+        android:id="@+id/btnRegresarLogin"
+        android:layout_width="265dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/gruppo"
+        android:onClick="RegresarLogin"
+        android:text="@string/RegresarALLogin"
+        android:textColor="#FFB952"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#707070"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
+</androidx.constraintlayout.widget.ConstraintLayout>

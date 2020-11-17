@@ -37,22 +37,24 @@
         app:layout_constraintVertical_bias="0.368" />
 
     <EditText
-        android:id="@+id/txtUsuario"
+        android:id="@+id/txtEmailLogin"
         android:layout_width="262dp"
         android:layout_height="49dp"
         android:ems="10"
         android:fontFamily="@font/gruppo"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:textAllCaps="true"
         android:textColor="#FFB952"
+        android:textColorHint="#FFB952"
+        android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435"
-        tools:text="example@gmail.com" />
+        app:layout_constraintVertical_bias="0.435" />
 
     <TextView
         android:id="@+id/tVContrasena"
@@ -139,4 +141,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.659" />
+
+    <ImageButton
+        android:id="@+id/btnGoogle"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        android:background="@color/fondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951"
+        app:srcCompat="@drawable/google" />
+
+    <ImageButton
+        android:id="@+id/btnfacebook"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        android:background="@color/fondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.658"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageButton
+        android:id="@+id/btnEmail"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        android:background="@color/fondo"
+        android:onClick="registrarmeEmail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.331"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951"
+        app:srcCompat="@drawable/email" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,4 +19,7 @@
     <string name="RepetirContrasena">Repeat password</string>
     <string name="Genero">Gender</string>
     <string name="TerminarRegistro">Finish registration</string>
+    <string name="email">Email</string>
+    <string name="autenticar">Authenticate</string>
+    <string name="RegresarALLogin">Return</string>
 </resources>
