@@ -29,4 +29,17 @@
     <string name="Elfo">Elven</string>
     <string name="Alineamiento">Alignment:</string>
     <string name="Inspiracion">Inspiration</string>
+    <string name="Fuerza">Strength</string>
+    <string name="Destreza">Dexterity</string>
+    <string name="Constitucion">Constitution</string>
+    <string name="Inteligencia">Intelligence</string>
+    <string name="Sabiduria">Wisdom</string>
+    <string name="Carisma">Charisma</string>
+    <string name="ClaseArmadura">Armor class</string>
+    <string name="Iniciativa">Initiative</string>
+    <string name="Velocidad">Speed</string>
+    <string name="Atributos">Attributes</string>
+    <string name="GolpesMaximos">Hit point maximum</string>
+    <string name="GolpesActuales">Current hit points</string>
+    <string name="GolpesTemporales">Temporary hit points</string>
 </resources>

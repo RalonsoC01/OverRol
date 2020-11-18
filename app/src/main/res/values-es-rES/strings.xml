@@ -24,11 +24,22 @@
     <string name="RegresarALLogin">Volver</string>
     <string name="CambiarImagen">Cambiar Imagen</string>
     <string name="NecesitasHabilitarPermisos">Necesitas habilitar los permisos</string>
-    <string name="NombrePersonaje:">Nombre del personaje:</string>
-    <string name="NombrePersonaje:">Nombre del personaje:</string>
     <string name="NombreDelPersonaje">Nombre del personaje:</string>
     <string name="Raza">Raza:</string>
     <string name="Elfo">Elfo</string>
     <string name="Alineamiento">Alineamiento:</string>
     <string name="Inspiracion">Inspiración</string>
+    <string name="Fuerza">Fuerza</string>
+    <string name="Destreza">Destreza</string>
+    <string name="Constitucion">Constitución</string>
+    <string name="Inteligencia">Inteligencia</string>
+    <string name="Sabiduria">Sabiduría</string>
+    <string name="Carisma">Carisma</string>
+    <string name="ClaseArmadura">Clase de armadura</string>
+    <string name="Iniciativa">Iniciativa</string>
+    <string name="Velocidad">Velocidad</string>
+    <string name="Atributos">Atributos</string>
+    <string name="GolpesMaximos">Puntos de golpes máximos</string>
+    <string name="GolpesActuales">Puntos de golpes actuales</string>
+    <string name="GolpesTemporales">Puntos de golpes temporales</string>
 </resources>
