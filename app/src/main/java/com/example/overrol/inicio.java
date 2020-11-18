@@ -25,6 +25,11 @@ public class inicio extends AppCompatActivity {
         Intent i= new Intent(this,inicio.class);
         startActivity(i);
     }
+    public void CrearFicha(View view)
+    {
+        Intent i= new Intent(this,fichaPersonaje.class);
+        startActivity(i);
+    }
 
     //Menu actionBar
     public boolean onCreateOptionsMenu(Menu menu){

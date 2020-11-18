@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="fondo">#373737</color>
+    <color name="Naranja">#FFB952</color>
+    <color name="hint">#917142</color>
 </resources>

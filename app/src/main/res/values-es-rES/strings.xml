@@ -22,4 +22,13 @@
     <string name="email">Correo electrónico</string>
     <string name="autenticar">Autenticar</string>
     <string name="RegresarALLogin">Volver</string>
+    <string name="CambiarImagen">Cambiar Imagen</string>
+    <string name="NecesitasHabilitarPermisos">Necesitas habilitar los permisos</string>
+    <string name="NombrePersonaje:">Nombre del personaje:</string>
+    <string name="NombrePersonaje:">Nombre del personaje:</string>
+    <string name="NombreDelPersonaje">Nombre del personaje:</string>
+    <string name="Raza">Raza:</string>
+    <string name="Elfo">Elfo</string>
+    <string name="Alineamiento">Alineamiento:</string>
+    <string name="Inspiracion">Inspiración</string>
 </resources>

@@ -7,4 +7,218 @@
     android:background="#373737"
     tools:context=".fichaPersonaje">
 
+    <EditText
+        android:id="@+id/txtNivel"
+        android:layout_width="38dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/Naranja"
+        android:textColorHint="@color/hint"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="76dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="365xp"
+        android:inputType="textPersonName"
+        android:textColor="@color/Naranja"
+        android:textColorHint="@color/hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303" />
+
+    <TextView
+        android:id="@+id/tvNivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LVL:"
+        android:textColor="@color/Naranja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <TextView
+        android:id="@+id/tvExperiencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXP:"
+        android:textColor="@color/Naranja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <EditText
+        android:id="@+id/txtAlineamiento"
+        android:layout_width="159dp"
+        android:layout_height="34dp"
+        android:ems="10"
+        android:hint="Neutral"
+        android:inputType="textPersonName"
+        android:textColor="@color/Naranja"
+        android:textColorHint="@color/hint"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="153dp"
+        android:layout_height="137dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvRaza"
+        android:layout_width="159dp"
+        android:layout_height="25dp"
+        android:text="@string/Raza"
+        android:textColor="@color/Naranja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <EditText
+        android:id="@+id/txtNombrePersonaje"
+        android:layout_width="159dp"
+        android:layout_height="34dp"
+        android:ems="10"
+        android:hint="Leo"
+        android:inputType="textPersonName"
+        android:textColor="@color/Naranja"
+        android:textColorHint="#917142"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <TextView
+        android:id="@+id/tvNombrePersonaje"
+        android:layout_width="159dp"
+        android:layout_height="25dp"
+        android:text="@string/NombreDelPersonaje"
+        android:textColor="@color/Naranja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="151dp"
+        android:layout_height="34dp"
+        android:fontFamily="@font/gruppo"
+        android:text="@string/CambiarImagen"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:textStyle="normal|bold"
+        app:backgroundTint="@color/Naranja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.235" />
+
+    <EditText
+        android:id="@+id/txtRaza"
+        android:layout_width="159dp"
+        android:layout_height="34dp"
+        android:ems="10"
+        android:hint="@string/Elfo"
+        android:inputType="textPersonName"
+        android:textColor="@color/Naranja"
+        android:textColorHint="@color/hint"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <TextView
+        android:id="@+id/tvAlineamiento"
+        android:layout_width="159dp"
+        android:layout_height="25dp"
+        android:text="@string/Alineamiento"
+        android:textColor="@color/Naranja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <CheckBox
+        android:id="@+id/cbInspiracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Inspiracion"
+        android:textColor="@color/Naranja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304" />
+
+    <LinearLayout
+        android:id="@+id/LYH"
+        android:layout_width="399dp"
+        android:layout_height="583dp"
+        android:layout_marginTop="272dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/LYV1"
+            android:layout_width="204dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LYV2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

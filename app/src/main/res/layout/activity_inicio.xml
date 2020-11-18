@@ -25,6 +25,7 @@
         android:layout_width="363dp"
         android:layout_height="73dp"
         android:fontFamily="@font/gruppo"
+        android:onClick="CrearFicha"
         android:text="@string/crearficha"
         android:textColor="#000000"
         android:textStyle="normal|bold"

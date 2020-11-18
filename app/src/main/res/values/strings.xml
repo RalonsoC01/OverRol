@@ -22,4 +22,11 @@
     <string name="email">Email</string>
     <string name="autenticar">Authenticate</string>
     <string name="RegresarALLogin">Return</string>
+    <string name="CambiarImagen">Change image</string>
+    <string name="NecesitasHabilitarPermisos">You need to enable permissions</string>
+    <string name="NombreDelPersonaje">Character name:</string>
+    <string name="Raza">Race:</string>
+    <string name="Elfo">Elven</string>
+    <string name="Alineamiento">Alignment:</string>
+    <string name="Inspiracion">Inspiration</string>
 </resources>
