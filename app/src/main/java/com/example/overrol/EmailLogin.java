@@ -72,7 +72,7 @@ public class EmailLogin extends AppCompatActivity implements View.OnClickListene
             return;
         }
 
-        progressDialog.setMessage("Realizando registro en linea...");
+        progressDialog.setMessage("Cargando");
         progressDialog.show();
         firebaseAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
