@@ -95,7 +95,7 @@
         android:layout_width="265dp"
         android:layout_height="45dp"
         android:fontFamily="@font/gruppo"
-        android:onClick="acceder"
+        android:onClick="pasarIndex"
         android:text="@string/acceder"
         android:textColor="#000000"
         android:textSize="18sp"
