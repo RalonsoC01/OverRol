@@ -44,6 +44,7 @@
             android:layout_weight="1"
             android:background="#FFB952"
             android:fontFamily="@font/gruppo"
+            android:onClick="registrousuario"
             android:text="@string/TerminarRegistro"
             android:textColor="#000000"
             android:textSize="18sp"

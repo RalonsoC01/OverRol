@@ -1,7 +1,9 @@
 package com.example.overrol;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -19,14 +21,21 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Resgistro <Firebase> extends AppCompatActivity implements View.OnClickListener {
     private EditText nombre;
     private EditText email;
     private EditText contrsena;
     private EditText contrsena2;
+    private String Genero;
     private TextView TVSeleccion;
     private boolean acepto;
+    private Spinner cur;
+    private FirebaseAuth mAuth;
+    private ProgressDialog progressDialog;
 
 
 
@@ -39,62 +48,95 @@ public class Resgistro <Firebase> extends AppCompatActivity implements View.OnCl
 
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resgistro);
 
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("message");
+
+
         //Spinner
         TVSeleccion=(TextView) findViewById(R.id.tvSeleccion);
         spinner = findViewById(R.id.spinnerGenero);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, genero);
+
+
+
         spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                TVSeleccion.setText(adapterView.getItemAtPosition(i).toString());
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
 
         nombre=(EditText) findViewById(R.id.txtNombre);
         email=(EditText) findViewById(R.id.txtEmail);
         contrsena=(EditText)findViewById(R.id.txtContrasena);
         contrsena2=(EditText) findViewById(R.id.txtContrasena2);
-        generos=(Spinner) findViewById(R.id.spinnerGenero);
+        this.cur = (Spinner) findViewById(R.id.spinnerGenero);
+        this.Genero =  cur.getSelectedItem().toString();
+
+        progressDialog=new ProgressDialog(this);
 
     }
 
-    private void registrousuario(){
+    public void registrousuario(View view) {
 
-        String txtEmail=email.getText().toString().trim();
-        String txtNombre=nombre.getText().toString().trim();
-        String txtContrasena=contrsena.getText().toString().trim();
-
+        String txtEmail = email.getText().toString().trim();
+        String txtNombre = nombre.getText().toString().trim();
+        String txtContrasena = contrsena.getText().toString().trim();
+        String txtGenero = Genero;
 
 
         if (TextUtils.isEmpty(txtEmail)) {
             Toast.makeText(this, "Se debe ingresar un correo", Toast.LENGTH_LONG).show();
             return;
         }
-        if (TextUtils.isEmpty(contrsena)) {
+        if (TextUtils.isEmpty(txtContrasena)) {
             Toast.makeText(this, "Falta ingresar la contraseña", Toast.LENGTH_LONG).show();
             return;
         }
-        if (TextUtils.isEmpty(nombre)) {
+        if (TextUtils.isEmpty(txtNombre)) {
             Toast.makeText(this, "Falta ingresar el nombre", Toast.LENGTH_LONG).show();
             return;
         }
-        if (TextUtils.isEmpty(telefono)) {
-            Toast.makeText(this, "Falta ingresar el telefono", Toast.LENGTH_LONG).show();
+        if (TextUtils.isEmpty(txtGenero)) {
+            Toast.makeText(this, "Falta ingresar tu genero", Toast.LENGTH_LONG).show();
             return;
         }
+        progressDialog.setMessage("Registrando...");
+        progressDialog.show();
+        mAuth.createUserWithEmailAndPassword(txtEmail, txtContrasena)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            usuario usuario = new usuario(txtNombre, txtGenero, txtEmail); //Creacion de un onnjeto de tipo usuario
+
+
+                            FirebaseDatabase.getInstance().getReference("Usuario")
+                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                    .setValue(usuario).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    if (task.isSuccessful()) {
+                                        Toast.makeText(Resgistro.this, "Se ha registrado el usuario con el email: " + txtEmail, Toast.LENGTH_LONG).show();
+
+                                    } else {
+                                        if (task.getException() instanceof FirebaseAuthUserCollisionException) {
+                                            Toast.makeText(getApplicationContext(), "El usuario ya existe", Toast.LENGTH_LONG).show();
+                                            Intent inicio = new Intent(getApplication(), Login.class);
+                                        } else {
+                                            Toast.makeText(getApplicationContext(), "No se pudo registrar el usuario", Toast.LENGTH_LONG).show();
+                                        }
+                                        progressDialog.dismiss();
+                                    }
+                                }
+                            });
+                        }
+                    }
+                });
     }
+
+
 
 
 
