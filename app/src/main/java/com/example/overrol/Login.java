@@ -27,7 +27,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     private EditText contrasena;
     private String usuarioStr;
     private String contrsenaStr;
-    private CheckBox recordar;
 
 
 
@@ -43,20 +42,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         contrasena=(EditText) findViewById(R.id.txtContrasenaLogin);
     }
 
-    public void Recordarusuario(){
-        if(recordar.isChecked()){
-            SharedPreferences prefs = getSharedPreferences("MisPreferencias",Context.MODE_PRIVATE);
-
-            SharedPreferences.Editor editor = prefs.edit();
-            editor.putString("password", contrsenaStr);
-            editor.putString("Email",usuarioStr );
-            editor.commit();
-            String password = prefs.getString("password", contrsenaStr);
-            String user = prefs.getString("Email", usuarioStr);
-
-
-        }
-    }
 
     public void acceder(View view)
     {
@@ -66,11 +51,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     public void registrarme(View view)
     {
         Intent i= new Intent(this,Resgistro.class);
-        startActivity(i);
-    }
-    public void registrarmeEmail(View view)
-    {
-        Intent i= new Intent(this,EmailLogin.class);
         startActivity(i);
     }
 

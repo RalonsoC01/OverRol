@@ -12,7 +12,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OverRol">
-        <activity android:name=".EmailLogin"></activity>
         <activity android:name=".dados" />
         <activity android:name=".fichaPersonaje" />
         <activity android:name=".inicio" />
