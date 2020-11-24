@@ -4,11 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -24,6 +27,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     private EditText contrasena;
     private String usuarioStr;
     private String contrsenaStr;
+    private CheckBox recordar;
 
 
 
@@ -34,10 +38,26 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         mAuth = FirebaseAuth.getInstance();
         setContentView(R.layout.activity_login);
 
+
         Usuario=(EditText) findViewById(R.id.txtEmailLogin);
         contrasena=(EditText) findViewById(R.id.txtContrasenaLogin);
-
     }
+
+    public void Recordarusuario(){
+        if(recordar.isChecked()){
+            SharedPreferences prefs = getSharedPreferences("MisPreferencias",Context.MODE_PRIVATE);
+
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putString("password", contrsenaStr);
+            editor.putString("Email",usuarioStr );
+            editor.commit();
+            String password = prefs.getString("password", contrsenaStr);
+            String user = prefs.getString("Email", usuarioStr);
+
+
+        }
+    }
+
     public void acceder(View view)
     {
         Intent i= new Intent(this,inicio.class);
@@ -59,9 +79,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         usuarioStr= Usuario.getText().toString();
         contrsenaStr = contrasena.getText().toString();
         if (!usuarioStr.isEmpty() && !contrsenaStr.isEmpty()){
+
             loginUser();
         }else{
-            Toast.makeText(Login.this, "Tu correo no existe, hijo de la gran puta, no vuelvas por aqui", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Login.this, "El correo o la contraseña no existe.", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -78,7 +99,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                     //Finalizar Activity
                     finish();
                 }else{
-                    Toast.makeText(Login.this, "Tu correo no existe, hijo de la gran puta, no vuelvas por aqui", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login.this, "El correo o la contraseña no existe.", Toast.LENGTH_SHORT).show();
                 }
             }
         });

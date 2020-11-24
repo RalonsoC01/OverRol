@@ -10,13 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class dados extends AppCompatActivity {
-    int d4;
-    int d6;
-    int d8;
-    int d10;
-    int d12;
-    int d20;
-    int d100;
+    int dado;
     String resultado;
     private TextView tv_dadosd;
     @Override
@@ -35,51 +29,51 @@ public class dados extends AppCompatActivity {
 
     public void D4(View view)
     {
-        this.d4=(int) (Math.random()*4+1);
+        this.dado=(int) (Math.random()*4+1);
         this.resultado= "";
-        this.resultado= String.valueOf(this.d4);
+        this.resultado= String.valueOf(this.dado);
         tv_dadosd.setText(resultado);
     }
     public void D6(View view)
     {
-        this.d6=(int) (Math.random()*6+1);
+        this.dado=(int) (Math.random()*6+1);
         this.resultado= "";
-        this.resultado= String.valueOf(this.d6);
+        this.resultado= String.valueOf(this.dado);
         tv_dadosd.setText(resultado);
     }
     public void D8(View view)
     {
-        this.d8=(int) (Math.random()*8+1);
+        this.dado=(int) (Math.random()*8+1);
         this.resultado= "";
-        this.resultado= String.valueOf(this.d8);
+        this.resultado= String.valueOf(this.dado);
         tv_dadosd.setText(resultado);
     }
     public void D10(View view)
     {
-        this.d10=(int) (Math.random()*10+1);
+        this.dado=(int) (Math.random()*10+1);
         this.resultado= "";
-        this.resultado= String.valueOf(this.d10);
+        this.resultado= String.valueOf(this.dado);
         tv_dadosd.setText(resultado);
     }
     public void D12(View view)
     {
-        this.d12=(int) (Math.random()*12+1);
+        this.dado=(int) (Math.random()*12+1);
         this.resultado= "";
-        this.resultado= String.valueOf(this.d12);
+        this.resultado= String.valueOf(this.dado);
         tv_dadosd.setText(resultado);
     }
     public void D20(View view)
     {
-        this.d20=(int) (Math.random()*20+1);
+        this.dado=(int) (Math.random()*20+1);
         this.resultado= "";
-        this.resultado= String.valueOf(this.d20);
+        this.resultado= String.valueOf(this.dado);
         tv_dadosd.setText(resultado);
     }
     public void D100(View view)
     {
-        this.d100=(int) (Math.random()*100+1);
+        this.dado=(int) (Math.random()*100+1);
         this.resultado= "";
-        this.resultado= String.valueOf(this.d100);
+        this.resultado= String.valueOf(this.dado);
         tv_dadosd.setText(resultado);
     }
 
