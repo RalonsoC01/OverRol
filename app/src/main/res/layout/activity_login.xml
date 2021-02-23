@@ -91,23 +91,6 @@
         app:layout_constraintVertical_bias="0.591" />
 
     <Button
-        android:id="@+id/btnAcceder"
-        android:layout_width="265dp"
-        android:layout_height="45dp"
-        android:fontFamily="@font/gruppo"
-        android:onClick="pasarIndex"
-        android:text="@string/acceder"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:backgroundTint="#FFB952"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.76" />
-
-    <Button
         android:id="@+id/btnRegistrase"
         android:layout_width="265dp"
         android:layout_height="49dp"
@@ -120,10 +103,28 @@
         app:backgroundTint="#707070"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcceder"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <Button
+        android:id="@+id/btnAcceder"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/gruppo"
+        android:onClick="pasarIndex"
+        android:text="@string/acceder"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFB952"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.844" />
+        app:layout_constraintVertical_bias="0.747" />
 
     <CheckBox
         android:id="@+id/cbRecordar"

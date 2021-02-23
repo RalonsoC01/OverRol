@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,129 +9,150 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="434dp"
-        android:layout_height="203dp"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_above="@+id/d8"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="35dp"
         android:onClick="Inicio"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.021"
         app:srcCompat="@drawable/overline_4" />
-
-    <ImageButton
-        android:id="@+id/d6"
-        android:layout_width="74dp"
-        android:layout_height="71dp"
-        android:background="@color/fondo"
-        android:onClick="D6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.376"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.374"
-        app:srcCompat="@drawable/d6" />
-
-    <ImageButton
-        android:id="@+id/d4"
-        android:layout_width="74dp"
-        android:layout_height="71dp"
-        android:background="@color/fondo"
-        android:onClick="D4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.374"
-        app:srcCompat="@drawable/d4" />
-
-    <ImageButton
-        android:id="@+id/d12"
-        android:layout_width="73dp"
-        android:layout_height="71dp"
-        android:background="@color/fondo"
-        android:onClick="D12"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.262"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481"
-        app:srcCompat="@drawable/d12" />
-
-    <ImageButton
-        android:id="@+id/d10"
-        android:layout_width="73dp"
-        android:layout_height="71dp"
-        android:background="@color/fondo"
-        android:onClick="D10"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.812"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.374"
-        app:srcCompat="@drawable/d10" />
-
-    <ImageButton
-        android:id="@+id/d20"
-        android:layout_width="74dp"
-        android:layout_height="71dp"
-        android:background="@color/fondo"
-        android:onClick="D20"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481"
-        app:srcCompat="@drawable/d20" />
-
-    <ImageButton
-        android:id="@+id/d100"
-        android:layout_width="73dp"
-        android:layout_height="71dp"
-        android:background="@color/fondo"
-        android:onClick="D100"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.694"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481"
-        app:srcCompat="@drawable/d100" />
-
-    <ImageButton
-        android:id="@+id/d8"
-        android:layout_width="73dp"
-        android:layout_height="71dp"
-        android:background="@color/fondo"
-        android:onClick="D8"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.595"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.374"
-        app:srcCompat="@drawable/d8" />
 
     <TextView
         android:id="@+id/textDados"
-        android:layout_width="255dp"
-        android:layout_height="214dp"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="111dp"
         android:background="@drawable/style_border_editext"
         android:fontFamily="@font/gruppo"
         android:gravity="center|center_horizontal|center_vertical"
         android:textColor="#FFB952"
         android:textSize="200sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.816" />
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/d6"
+        android:layout_width="73dp"
+        android:layout_height="71dp"
+        android:layout_above="@+id/d20"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toStartOf="@+id/d8"
+        android:layout_toLeftOf="@+id/d8"
+        android:background="@color/fondo"
+        android:onClick="D6"
+        android:src="@drawable/d6" />
+
+    <ImageButton
+        android:id="@+id/d8"
+        android:layout_width="73dp"
+        android:layout_height="71dp"
+        android:layout_above="@+id/d100"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toStartOf="@+id/d10"
+        android:layout_toLeftOf="@+id/d10"
+        android:background="@color/fondo"
+        android:onClick="D8"
+        android:src="@drawable/d8" />
+
+    <ImageButton
+        android:id="@+id/d10"
+        android:layout_width="73dp"
+        android:layout_height="71dp"
+        android:layout_above="@+id/d100"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/fondo"
+        android:onClick="D10"
+        android:src="@drawable/d10" />
+
+    <ImageButton
+        android:id="@+id/d100"
+        android:layout_width="73dp"
+        android:layout_height="71dp"
+        android:layout_above="@+id/textDados"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="88dp"
+        android:layout_marginBottom="26dp"
+        android:background="@color/fondo"
+        android:onClick="D100"
+        android:src="@drawable/d100" />
+
+    <ImageButton
+        android:id="@+id/d20"
+        android:layout_width="74dp"
+        android:layout_height="71dp"
+        android:layout_above="@+id/textDados"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="26dp"
+        android:layout_toStartOf="@+id/d100"
+        android:layout_toLeftOf="@+id/d100"
+        android:background="@color/fondo"
+        android:onClick="D20"
+        android:src="@drawable/d20" />
+
+    <ImageButton
+        android:id="@+id/d12"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textDados"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="27dp"
+        android:layout_toStartOf="@+id/d20"
+        android:layout_toLeftOf="@+id/d20"
+        android:background="@color/fondo"
+        android:onClick="D12"
+        android:src="@drawable/d12" />
+
+    <ImageButton
+        android:id="@+id/d4"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/d12"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toStartOf="@+id/d6"
+        android:layout_toLeftOf="@+id/d6"
+        android:background="@color/fondo"
+        android:onClick="D4"
+        android:src="@drawable/d4" />
+
+</RelativeLayout>
