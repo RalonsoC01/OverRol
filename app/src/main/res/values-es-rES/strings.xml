@@ -42,4 +42,11 @@
     <string name="GolpesMaximos">Puntos de golpes máximos</string>
     <string name="GolpesActuales">Puntos de golpes actuales</string>
     <string name="GolpesTemporales">Puntos de golpes temporales</string>
+    <string name="D4">Dado D4</string>
+    <string name="D6">Dado D6</string>
+    <string name="D8">Dado D8</string>
+    <string name="D10">Dado D10</string>
+    <string name="D12">Dado D12</string>
+    <string name="D20">Dado D20</string>
+    <string name="D100">Dado D100</string>
 </resources>

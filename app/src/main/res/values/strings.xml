@@ -42,4 +42,11 @@
     <string name="GolpesMaximos">Hit point maximum</string>
     <string name="GolpesActuales">Current hit points</string>
     <string name="GolpesTemporales">Temporary hit points</string>
+    <string name="D4">Dice D4</string>
+    <string name="D6">Dice D6</string>
+    <string name="D8">Dice D8</string>
+    <string name="D10">Dice D10</string>
+    <string name="D12">Dice D12</string>
+    <string name="D20">Dice D20</string>
+    <string name="D100">Dice D100</string>
 </resources>
