@@ -3,17 +3,25 @@ package com.example.overrol;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class inicio extends AppCompatActivity {
+
+    private MediaPlayer musica;
+    private boolean sonido=true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
+        musica=MediaPlayer.create(this,R.raw.musicafondo);
+        musica.setLooping(true);
+        musica.start();
     }
     public void Daditos(View view)
     {
@@ -29,6 +37,15 @@ public class inicio extends AppCompatActivity {
     {
         Intent i= new Intent(this,fichaPersonaje.class);
         startActivity(i);
+    }
+    public void Poneryquitarmusica(View view){
+        if(sonido==true){
+            musica.stop();
+            sonido=false;
+        }else{
+            musica.start();
+            sonido=true;
+        }
     }
 
     //Menu actionBar
@@ -47,5 +64,25 @@ public class inicio extends AppCompatActivity {
         }
 
         return true;
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(musica.isPlaying())
+        {
+            musica.stop();
+            musica.release();
+        }
+        Toast.makeText(this,"onDestroy",Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    protected void onResume(){
+        super.onResume();
+        musica.start();
+    }
+    @Override
+    protected void onPause(){
+        super.onPause();
+        musica.pause();
     }
 }
