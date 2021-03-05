@@ -8,12 +8,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class inicio extends AppCompatActivity {
 
     private MediaPlayer musica;
     private boolean sonido=true;
+    ImageView estado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,7 @@ public class inicio extends AppCompatActivity {
         musica=MediaPlayer.create(this,R.raw.musicafondo);
         musica.setLooping(true);
         musica.start();
+        this.estado = findViewById(R.id.imgSonido);
     }
     public void Daditos(View view)
     {
@@ -38,12 +41,12 @@ public class inicio extends AppCompatActivity {
         Intent i= new Intent(this,fichaPersonaje.class);
         startActivity(i);
     }
-    public void Poneryquitarmusica(View view){
+    public void PoneryQuitarmusica(View view){
         if(sonido==true){
-            musica.stop();
+            onPause();
             sonido=false;
         }else{
-            musica.start();
+            onResume();
             sonido=true;
         }
     }
@@ -79,10 +82,12 @@ public class inicio extends AppCompatActivity {
     protected void onResume(){
         super.onResume();
         musica.start();
+        this.estado.setImageResource(R.drawable.volume);
     }
     @Override
     protected void onPause(){
         super.onPause();
         musica.pause();
+        this.estado.setImageResource(R.drawable.mute);
     }
 }

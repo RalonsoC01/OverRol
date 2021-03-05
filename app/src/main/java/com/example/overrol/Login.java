@@ -48,6 +48,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         Intent i= new Intent(this,Resgistro.class);
         startActivity(i);
     }
+    public void prueba(View view)
+    {
+        Intent i= new Intent(this,inicio.class);
+        startActivity(i);
+    }
 
     public void pasarIndex(View view){
 
