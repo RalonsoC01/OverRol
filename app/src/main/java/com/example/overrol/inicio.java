@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class inicio extends AppCompatActivity {
 
-    private MediaPlayer musica;
+    public MediaPlayer musica;
     private boolean sonido=true;
     ImageView estado;
 
@@ -28,26 +28,29 @@ public class inicio extends AppCompatActivity {
     }
     public void Daditos(View view)
     {
+        musica.stop();
+        musica.release();
         Intent i= new Intent(this,dados.class);
         startActivity(i);
-    }
-    public void Inicio(View view)
-    {
-        Intent i= new Intent(this,inicio.class);
-        startActivity(i);
+        overridePendingTransition(R.anim.deslizar_derecha, R.anim.deslizar_hacia_izquierda);
     }
     public void CrearFicha(View view)
     {
+        musica.stop();
+        musica.release();
         Intent i= new Intent(this,fichaPersonaje.class);
         startActivity(i);
+        overridePendingTransition(R.anim.deslizar_derecha, R.anim.deslizar_hacia_izquierda);
     }
     public void PoneryQuitarmusica(View view){
-        if(sonido==true){
-            onPause();
+        if(sonido){
+            musica.pause();
             sonido=false;
+            this.estado.setImageResource(R.drawable.mute);
         }else{
-            onResume();
+            musica.start();
             sonido=true;
+            this.estado.setImageResource(R.drawable.volume);
         }
     }
 
@@ -69,25 +72,31 @@ public class inicio extends AppCompatActivity {
         return true;
     }
     @Override
+    protected void onStart(){
+        super.onStart();
+        try {
+            musica.start();
+            musica.setLooping(true);
+        }catch (IllegalStateException e){
+
+        }
+    }
+    @Override
     protected void onDestroy() {
         super.onDestroy();
-        if(musica.isPlaying())
-        {
-            musica.stop();
-            musica.release();
-        }
-        Toast.makeText(this,"onDestroy",Toast.LENGTH_SHORT).show();
     }
     @Override
     protected void onResume(){
         super.onResume();
-        musica.start();
-        this.estado.setImageResource(R.drawable.volume);
     }
     @Override
     protected void onPause(){
         super.onPause();
-        musica.pause();
-        this.estado.setImageResource(R.drawable.mute);
+        try {
+            musica.pause();
+            musica.setLooping(false);
+        }catch (IllegalStateException e){
+
+        }
     }
 }

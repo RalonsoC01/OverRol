@@ -53,6 +53,11 @@ public class fichaPersonaje extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.delizar_izquierda, R.anim.deslizar_hacia_derecha);
+    }
     //Menu actionBar
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menu_atras, menu);

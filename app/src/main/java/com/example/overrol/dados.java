@@ -25,6 +25,7 @@ public class dados extends AppCompatActivity {
     {
         Intent i= new Intent(this,inicio.class);
         startActivity(i);
+        overridePendingTransition(R.anim.delizar_izquierda, R.anim.deslizar_hacia_derecha);
     }
 
     public void D4(View view)
@@ -75,6 +76,29 @@ public class dados extends AppCompatActivity {
         this.resultado= "";
         this.resultado= String.valueOf(this.dado);
         tv_dadosd.setText(resultado);
+    }
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.delizar_izquierda, R.anim.deslizar_hacia_derecha);
+    }
+
+    @Override
+    protected void onStart(){
+        super.onStart();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+    @Override
+    protected void onResume(){
+        super.onResume();
+    }
+    @Override
+    protected void onPause(){
+        super.onPause();
     }
 
     //Menu actionBar

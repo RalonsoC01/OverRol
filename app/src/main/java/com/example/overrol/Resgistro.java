@@ -87,19 +87,19 @@ public class Resgistro <Firebase> extends AppCompatActivity implements View.OnCl
 
 
         if (TextUtils.isEmpty(txtEmail)) {
-            Toast.makeText(this, "Se debe ingresar un correo", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Se debe ingresar un correo", Toast.LENGTH_SHORT).show();
             return;
         }
         if (TextUtils.isEmpty(txtContrasena)) {
-            Toast.makeText(this, "Falta ingresar la contraseña", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Falta ingresar la contraseña", Toast.LENGTH_SHORT).show();
             return;
         }
         if (TextUtils.isEmpty(txtNombre)) {
-            Toast.makeText(this, "Falta ingresar el nombre", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Falta ingresar el nombre", Toast.LENGTH_SHORT).show();
             return;
         }
         if (TextUtils.isEmpty(txtGenero)) {
-            Toast.makeText(this, "Falta ingresar tu genero", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Falta ingresar tu genero", Toast.LENGTH_SHORT).show();
             return;
         }
         progressDialog.setMessage("Registrando...");
@@ -118,14 +118,14 @@ public class Resgistro <Firebase> extends AppCompatActivity implements View.OnCl
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
-                                        Toast.makeText(Resgistro.this, "Se ha registrado el usuario con el email: " + txtEmail, Toast.LENGTH_LONG).show();
+                                        Toast.makeText(Resgistro.this, "Se ha registrado el usuario con el email: " + txtEmail, Toast.LENGTH_SHORT).show();
 
                                     } else {
                                         if (task.getException() instanceof FirebaseAuthUserCollisionException) {
-                                            Toast.makeText(getApplicationContext(), "El usuario ya existe", Toast.LENGTH_LONG).show();
+                                            Toast.makeText(getApplicationContext(), "El usuario ya existe", Toast.LENGTH_SHORT).show();
                                             Intent inicio = new Intent(getApplication(), Login.class);
                                         } else {
-                                            Toast.makeText(getApplicationContext(), "No se pudo registrar el usuario", Toast.LENGTH_LONG).show();
+                                            Toast.makeText(getApplicationContext(), "No se pudo registrar el usuario", Toast.LENGTH_SHORT).show();
                                         }
                                         progressDialog.dismiss();
                                     }

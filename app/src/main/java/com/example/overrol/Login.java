@@ -47,6 +47,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     {
         Intent i= new Intent(this,Resgistro.class);
         startActivity(i);
+        overridePendingTransition(R.anim.deslizar_arriba, R.anim.deslizar_hacia_abajo);
     }
     public void prueba(View view)
     {
