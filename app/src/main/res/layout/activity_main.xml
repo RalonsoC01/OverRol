@@ -16,11 +16,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="23dp"
-        android:layout_marginLeft="23dp"
-        android:layout_marginEnd="23dp"
-        android:layout_marginRight="23dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="150dp"
         android:fontFamily="@font/gruppo"
         android:foregroundGravity="center_vertical|center|center_horizontal"
         android:gravity="center"
@@ -31,9 +31,9 @@
         android:textStyle="bold|italic" />
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/imglogo"
         android:layout_width="wrap_content"
-        android:layout_height="522dp"
+        android:layout_height="663dp"
         android:layout_above="@+id/txtBienvenida"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
@@ -45,7 +45,7 @@
         android:layout_marginTop="0dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
-        android:layout_marginBottom="-30dp"
+        android:layout_marginBottom="-151dp"
         app:srcCompat="@drawable/overline_4" />
 
 </RelativeLayout>
