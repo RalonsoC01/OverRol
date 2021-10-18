@@ -1,5 +1,7 @@
 package com.example.overrol;
 
+import static com.example.overrol.R.layout.activity_login;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +12,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -33,9 +36,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         mAuth = FirebaseAuth.getInstance();
-        setContentView(R.layout.activity_login);
+        setContentView(activity_login);
 
 
         Usuario=(EditText) findViewById(R.id.txtEmailLogin);

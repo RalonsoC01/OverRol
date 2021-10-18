@@ -4,11 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/dam202/AndroidStudioProjects/OverRol/app/src/main/res/layout/activity_dados.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/dam202/AndroidStudioProjects/OverRol/app/src/main/res/layout/activity_ficha_personaje.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dam202/AndroidStudioProjects/OverRol/app/src/main/res/layout/activity_ficha_personaje.xml" value="0.264" />
         <entry key="..\:/Users/dam202/AndroidStudioProjects/OverRol/app/src/main/res/layout/activity_inicio.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dam202/AndroidStudioProjects/OverRol/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/dam202/AndroidStudioProjects/OverRol/app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
         <entry key="..\:/Users/dam202/AndroidStudioProjects/OverRol/app/src/main/res/layout/activity_resgistro.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dam202/AndroidStudioProjects/OverRol/app/src/main/res/layout/activity_seleccion_dados.xml" value="0.19655797101449277" />
+        <entry key="..\:/Users/dam202/AndroidStudioProjects/OverRol/app/src/main/res/layout/activity_seleccion_datos.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dam202/AndroidStudioProjects/OverRol/app/src/main/res/layout/selector_dados.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

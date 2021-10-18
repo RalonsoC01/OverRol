@@ -49,4 +49,7 @@
     <string name="D12">Dado D12</string>
     <string name="D20">Dado D20</string>
     <string name="D100">Dado D100</string>
+    <string name="CrearPersonaje">Crear personaje</string>
+    <string name="Undado">1 Dado</string>
+    <string name="MasDados">Más dados</string>
 </resources>

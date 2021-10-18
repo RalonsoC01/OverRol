@@ -59,7 +59,7 @@ public class fichaPersonaje extends AppCompatActivity {
         overridePendingTransition(R.anim.delizar_izquierda, R.anim.deslizar_hacia_derecha);
     }
     //Menu actionBar
-    public boolean onCreateOptionsMenu(Menu menu){
+   /** public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menu_atras, menu);
         return true;
     }
@@ -75,6 +75,7 @@ public class fichaPersonaje extends AppCompatActivity {
 
         return true;
     }
+    **/
     @Override
     public void onActivityResult (int requestcode, int resultCode, @Nullable Intent data){
         if(requestcode == REQUEST_IMAGE_GALLERY){

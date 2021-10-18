@@ -49,4 +49,7 @@
     <string name="D12">Dice D12</string>
     <string name="D20">Dice D20</string>
     <string name="D100">Dice D100</string>
+    <string name="CrearPersonaje">Create character</string>
+    <string name="Undado">1 Dice</string>
+    <string name="MasDados">More dice</string>
 </resources>

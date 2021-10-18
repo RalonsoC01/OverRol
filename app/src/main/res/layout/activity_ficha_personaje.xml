@@ -9,15 +9,17 @@
 
     <EditText
         android:id="@+id/txtNombrePersonaje"
-        android:layout_width="159dp"
-        android:layout_height="wrap_content"
+        android:layout_width="168dp"
+        android:layout_height="30dp"
         android:layout_above="@+id/tvRaza"
+        android:layout_below="@+id/tvNombrePersonaje"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginStart="33dp"
         android:layout_marginLeft="33dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginRight="33dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
         android:layout_marginBottom="1dp"
         android:layout_toEndOf="@+id/profile"
         android:layout_toRightOf="@+id/profile"
@@ -168,14 +170,14 @@
 
     <ImageView
         android:id="@+id/profile"
-        android:layout_width="153dp"
-        android:layout_height="137dp"
+        android:layout_width="149dp"
+        android:layout_height="125dp"
         android:layout_above="@+id/btnGallery"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_marginStart="27dp"
         android:layout_marginLeft="27dp"
-        android:layout_marginBottom="2dp"
+        android:layout_marginBottom="1dp"
         android:background="@drawable/style_border_editext" />
 
     <Button
@@ -199,16 +201,12 @@
         android:id="@+id/tvNombrePersonaje"
         android:layout_width="163dp"
         android:layout_height="24dp"
-        android:layout_above="@+id/txtNombrePersonaje"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginStart="33dp"
         android:layout_marginLeft="33dp"
-        android:layout_marginTop="71dp"
         android:layout_marginEnd="33dp"
         android:layout_marginRight="33dp"
-        android:layout_marginBottom="-1dp"
         android:layout_toEndOf="@+id/profile"
         android:layout_toRightOf="@+id/profile"
         android:text="@string/NombreDelPersonaje"
@@ -436,16 +434,18 @@
 
     <LinearLayout
         android:id="@+id/LYHPadre2"
-        android:layout_width="164dp"
-        android:layout_height="136dp"
+        android:layout_width="166dp"
+        android:layout_height="135dp"
+        android:layout_above="@+id/button2"
+        android:layout_below="@+id/LYHPadre1"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="18dp"
-        android:layout_marginLeft="18dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginRight="13dp"
-        android:layout_marginBottom="139dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="12dp"
         android:layout_toStartOf="@+id/LYVPadre3"
         android:layout_toLeftOf="@+id/LYVPadre3"
         android:background="@drawable/style_border_editext"
@@ -609,5 +609,20 @@
             android:textSize="14sp" />
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="149dp"
+        android:layout_height="93dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="247dp"
+        android:layout_marginRight="247dp"
+        android:layout_marginBottom="17dp"
+        android:text="Button" />
 
 </RelativeLayout>

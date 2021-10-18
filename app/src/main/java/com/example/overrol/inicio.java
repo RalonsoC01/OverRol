@@ -30,7 +30,7 @@ public class inicio extends AppCompatActivity {
     {
         musica.stop();
         musica.release();
-        Intent i= new Intent(this,dados.class);
+        Intent i= new Intent(this,SelectorDados.class);
         startActivity(i);
         overridePendingTransition(R.anim.deslizar_derecha, R.anim.deslizar_hacia_izquierda);
     }
