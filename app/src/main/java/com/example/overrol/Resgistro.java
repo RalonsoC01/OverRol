@@ -141,7 +141,7 @@ public class Resgistro <Firebase> extends AppCompatActivity implements View.OnCl
 
 
     //Menu actionBar
-    public boolean onCreateOptionsMenu(Menu menu){
+   /** public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menu_atras, menu);
         return true;
     }
@@ -156,7 +156,7 @@ public class Resgistro <Firebase> extends AppCompatActivity implements View.OnCl
         }
 
         return true;
-    }
+    }*///
 
     @Override
     public void onClick(View v) {

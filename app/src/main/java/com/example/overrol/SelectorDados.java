@@ -19,4 +19,9 @@ public class SelectorDados extends AppCompatActivity {
         startActivity(i);
         overridePendingTransition(R.anim.deslizar_derecha, R.anim.deslizar_hacia_izquierda);
     }
+    public void Dados2(View view){
+        Intent i =new Intent(this,dados2.class);
+        startActivity(i);
+        overridePendingTransition(R.anim.deslizar_derecha, R.anim.deslizar_hacia_izquierda);
+    }
 }
